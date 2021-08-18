@@ -54,13 +54,14 @@
     }
     
     /* Full-width input fields */
-    .form-container input[type=text], .form-container input[type=password] {
+    .form-container input[type=text], .form-container input[type=password], .form-container select {
       width: 100%;
       padding: 15px;
       margin: 5px 0 22px 0;
       border: none;
       background: #f1f1f1;
     }
+
     
     /* When the inputs get focus, do something */
     .form-container input[type=text]:focus, .form-container input[type=password]:focus {
@@ -253,7 +254,7 @@
 <p>
     <a href="https://wa.me/8754143303?text=Hi Jeya Enterprises chat with me to known in detail about dolomite powder" target="_blank"><i class="fa fa-whatsapp" style="font-size: 20px; color:#4FCE5D">&ensp;</i><span style="text-decoration: underline">ENQUIRE HERE</span></a>
     <br>
-    <i class="fa fa-envelope" style="font-size: 20px;">&ensp;</i><span style="color:#CD201F;text-decoration: underline" class="open-button" onclick="openForm() ">ENQUIRE HERE</span>
+    <i class="fa fa-envelope" style="font-size: 20px; color:#CD201F;">&ensp;</i><span style="color:#0d6efd; text-decoration: underline" class="open-button" onclick="openForm() ">ENQUIRE HERE</span>
 <div class="form-popup form-container" id="myForm">
     
     <h1>Enquire</h1>
@@ -261,11 +262,23 @@
     <label for="email"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
 
-    <label for="comp"><b>Company</b></label>
-    <input type="text" placeholder="Enter Company" name="email" id="email" required>
-    <label for="manu"><b>Manufacturer</b></label>
-    <input type="text" placeholder="Enter Manufacturer" name="manufacturer" id="subject" required>
-
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <!-- <label for="manu"><b>Manufacturer</b></label>
+    <input type="text" placeholder="Enter Manufacturer" name="manufacturer" id="subject" required> -->
+    <label for="manu"><b>Product Engineering</b></label>
+    <select name="products" id="product">
+        <option value="Dolomite">Dolomite</option>
+        <option value="CalcinedClay">CalcinedClay</option>
+        <option value="ChinaClay">ChinaClay</option>
+        <option value="BlackBarytesPowder">BlackBarytesPowder</option>
+        <option value="ChinaClay">LimestoneGrid</option>
+        <option value="ChinaClay">LimestonePowder</option>
+        <option value="ChinaClay">LimestoneLumps</option>
+        <option value="ChinaClay">MarineGypsum</option>
+      </select><br>
+      <label for="contact"><b>Contact Number</b></label>
+    <input type="text" placeholder="Contact Number" name="email" id="email" required>
     <button type="submit" class="btn" name="submit-form" id="submit">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
